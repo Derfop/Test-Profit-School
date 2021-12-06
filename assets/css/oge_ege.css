@@ -1,0 +1,139 @@
+.intro_bg {
+    background: linear-gradient(180deg, 
+        rgba(0, 0, 0, 0.4) 0%, 
+        rgba(0, 0, 0, 0.8) 100%), 
+    url(../../images/oge_ege/background.jpg);
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_text {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    height: 50%;
+}
+
+.intro_text h1 {
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+.intro_text button {
+	color: #fff;
+	font-size: 18px;
+	border: 2px solid #B01116;
+	padding: 10px 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.intro_text button:hover {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #b01116;
+}
+
+.why {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0 100px 0;
+    width: 100%;
+}
+
+.why_block {
+    margin: 50px 25px 0 25px;
+    width: 550px;
+}
+
+.why_block>h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #b01116;
+}
+
+.why_block>h1>font {
+    font-family: FuturaPT-Book;
+    color: #000;
+}
+
+.why_block>h1>font>small {
+    color: #b01116;
+}
+
+.why_block>ul li {
+    list-style: disc;
+    font-size: 20px;
+}
+
+.why_block>hr {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 2px solid #b01116;
+}
+
+.gift {
+    background: #f5f5f5;
+    padding-top: 100px;
+}
+
+.gift_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift_inner>h2 {
+    font-family: FuturaPT-Book;
+    font-size: 24px;
+    width: 550px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.gift_inner>img {
+    height: 114px;
+    width: 114px;
+    color: #b01116;
+}
+
+.gift_inner>h1 {
+    font-size: 36px;
+    width: 650px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.gift_inner>p {
+    font-size: 20px;
+    width: 550px;
+    text-align: center;
+}
+
+.gift_phone {
+    width: 100%;
+    height: 385px;
+    background: url(../../images/oge_ege/phone.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog__courses-5 {
+    padding: 25px 0 100px 0;
+    background: #f5f5f5;
+}

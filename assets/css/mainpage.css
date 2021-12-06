@@ -1,0 +1,280 @@
+.intro_bg {
+    background: linear-gradient(180deg, 
+        rgba(0, 0, 0, 0.4) 0%, 
+        rgba(0, 0, 0, 0.8) 100%), 
+    url(../../images/mainpage/background.jpg);
+    width: 100%;
+    height: calc(100vh - 117px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_text {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    height: 50%;
+}
+
+.intro_text h1 {
+    color: #EB5252;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 64px;
+}
+
+.intro_text p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    width: 50%;
+    margin-top: 32px;
+}
+
+.red {
+    color: #B01116;
+}
+
+.about__us {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about__us h1 {
+    width: 45%;
+    margin: auto;
+    font-size: 36px;
+    margin: 100px auto;
+}
+
+.dignity {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 75px 75px;
+}
+
+.dignity img {
+    width: 100px;
+    height: 100px;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 24px;
+    word-wrap: break-word;
+}
+
+.element__dignity {
+    width: 350px;
+}
+
+.course {
+}
+
+.course_slider {
+}
+
+.course_item {
+}
+
+.course_inner {
+    display: flex;
+}
+
+.course_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #F5F5F5;
+    width: 35%;
+    height: 420px;
+    padding: 40px;
+}
+
+.course_title h1 {
+    font-size: 32px;
+    line-height: 46px;
+    color: #B01116;
+}
+
+.course_hr {
+    width: 50px;
+    border: 0;
+    border-top: 2px solid #B01116;
+    margin: 15px 0;
+}
+
+.course_text {
+    font-size: 24px;
+}
+
+.course_link {
+    margin: 30px 0;
+}
+
+.course_link a {
+    color: #b01116;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.course_link a:first-child {
+    margin-right: 5%;
+}
+
+.course_link a:hover {
+    text-decoration: underline;
+}
+
+.course_btn {
+    width: 210px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #b01116;
+    border: 2px solid #b01116;
+    padding: 10px 20px;
+    transition: .2s;
+}
+
+.course_btn:hover {
+    color: #fff;
+    background: #b01116;
+}
+
+.course_img {
+    height: 500px;
+    width: 65%;
+}
+
+.course_img img {
+    width: 100%;
+}
+
+.course-1 {
+    background: url(../../images/mainpage/course/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.course-2 {
+    background: url(../../images/mainpage/course/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.course-3 {
+    background: url(../../images/mainpage/course/3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.course-4 {
+    background: url(../../images/mainpage/course/4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #b01116;
+}
+
+.blog__teachers {
+    margin-top: 75px;
+}
+
+#teach__h1 {
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-size: 36px;
+}
+
+#teach__p {
+    width: 34%;
+    margin: auto;
+    text-align: center;
+    margin: 0 auto 100px auto;
+    font-size: 24px;
+}
+
+.teachers {
+    width: 1200px;
+    height: min-content;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 75px 75px;
+}
+
+.teacher {
+    width: 350px;
+}
+
+.teacher img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border: 2px solid #b01116;
+    border-radius: 50%;
+}
+
+.teach__name {
+    display: flex;
+}
+
+.teach__name h2 {
+    width: min-content;
+    font-size: 24px;
+    color: #B01116;
+}
+
+.teach__name h3 {
+    font-size: 18px;
+    font-family: FuturaPT-Medium;
+}
+
+.teach__full {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.teach__info p{
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: FuturaPT-Book;
+}
+
+.btn__teachers {
+    font-size: 16px;
+    border: 2px solid #B01116;
+    color: #B01116;
+    padding: 10px 20px;
+    background: none;
+    cursor: pointer;
+    margin: 75px 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: .2s;
+}
+
+.btn__teachers:hover {
+    color: #fff;
+    background: #b01116;
+}

@@ -1,0 +1,275 @@
+.intro_bg {
+    background: linear-gradient(180deg, 
+        rgba(0, 0, 0, 0.4) 0%, 
+        rgba(0, 0, 0, 0.8) 100%), 
+    url(../../images/preparation_for_school/background.jpg);
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_text {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    height: 50%;
+}
+
+.intro_text h1 {
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+.intro_text button {
+	color: #fff;
+	font-size: 18px;
+	border: 2px solid #B01116;
+	padding: 10px 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.intro_text button:hover {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #b01116;
+}
+
+.complex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 100px 0;
+}
+
+.complex_title h1 {
+	width: 550px;
+	font-size: 36px;
+	text-align: center;
+}
+
+.complex_cards {
+	margin-top: 100px;
+	display: grid; 
+  	grid-template-columns: 350px 350px 350px; 
+  	grid-template-rows: 181px 181px; 
+  	gap: 75px 75px;
+}
+
+.complex_card {
+
+}
+
+.complex_card_title {
+	font-family: FuturaPT-Medium;
+	font-size: 32px;
+	color: #B01116;
+	margin-bottom: 10px;
+}
+
+.complex_card_text {
+	font-size: 20px;
+}
+
+.photo {
+	background: #f5f5f5;
+	padding: 100px 0;
+}
+
+.photo_main {
+	display: flex;
+	flex-direction: column;
+}
+
+.photo_title {
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 75px;
+	text-align: center;
+}
+
+.photo_title h1 {
+	font-size: 36px;
+}
+
+.photo_title font {
+	font-family: FuturaPT-Book;
+}
+
+.photo_title small {
+	color: #b01116;
+}
+
+.photo_slider {
+	margin: 0 -20px;
+}
+
+.photo_item {
+
+}
+
+.photo_inner {
+}
+
+.photo_card {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	height: 460px;
+	padding: 20px;
+	margin: 0 20px;
+}
+
+.photo_card p {
+	font-size: 24px;
+}
+
+.photo_img {
+	height: 360px;
+    margin-bottom: 20px;
+}
+
+.card-1 {
+	background: url(../../images/preparation_for_school/photo/1.jpg);
+	background-size: cover;
+    background-position: center;
+}
+
+.card-2 {
+	background: url(../../images/preparation_for_school/photo/2.jpg);
+	background-size: cover;
+    background-position: center;
+}
+
+.card-3 {
+	background: url(../../images/preparation_for_school/photo/3.jpg);
+	background-size: cover;
+    background-position: center;
+}
+
+.card-4 {
+	background: url(../../images/preparation_for_school/photo/4.jpg);
+	background-size: cover;
+    background-position: center;
+}
+
+.card-5 {
+	background: url(../../images/preparation_for_school/photo/5.jpg);
+	background-size: cover;
+    background-position: center;
+}
+
+.card-6 {
+	background: url(../../images/preparation_for_school/photo/6.jpg);
+	background-size: cover;
+    background-position: center;
+}
+
+.photo_slider .prev_arrow {
+	position: absolute;
+	top: -145px;
+	right: 85px;
+
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+
+	background-color: #fff;
+	color: #b01116;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: .2s;
+}
+
+.photo_slider .prev_arrow:hover {
+	background-color: #b01116;
+	color: #fff;
+}
+
+.photo_slider .next_arrow {
+	position: absolute;
+	top: -145px;
+	right: 25px;
+
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+
+	background-color: #fff;
+	color: #b01116;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: .2s;
+}
+
+.photo_slider .next_arrow:hover {
+	background-color: #b01116;
+	color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #b01116;
+}
+
+#teach__h1-2 {
+    text-align: center;
+    margin: 0 auto 75px auto;
+    font-size: 36px;
+    width: 600px;
+}
+
+.teachers-2 {
+    width: 1200px;
+    height: min-content;
+    margin: 75px auto 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 75px 75px;
+}
+
+.course {
+	background: #F5F5F5;
+	padding: 100px 0 75px 0;
+}
+
+.course_inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.course_inner h1 {
+	width: 675px;
+	font-size: 36px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.course_inner p {
+	width: 650px;
+	font-size: 28px;
+	margin-bottom: 75px;
+	text-align: center;
+}

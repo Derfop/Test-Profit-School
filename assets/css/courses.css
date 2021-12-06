@@ -1,0 +1,136 @@
+.blog__courses hr{
+    border-top: 2px solid #eee;
+}
+
+.courses__inner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.courses__inner h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 75px 0 35px;
+}
+
+.courses__inner p {
+    width: 650px;
+    font-size: 28px;
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+
+.change__btn {
+    text-align: center;
+}
+
+.change__btn button{
+    width: 100px;
+    height: 40px;
+    margin-bottom: 25px;
+    color: #B01116;
+    border: 2px solid #B01116;
+    font-family: FuturaPT-Bold;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.change__btn button:hover {
+    color: #fff;
+    background-color: #b01116;
+}
+
+.courses__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses__block {
+    min-width: 300px;
+    background: #fff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 25px 50px;
+}
+
+.courses__block-header {
+    display: flex;
+    justify-content: space-between;
+    background: #b01116;
+    color: #FFFFFF;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 10px 15px;
+}
+
+.courses__block-header_main p {
+    font-size: 18px;
+    opacity: 0.75;
+    margin-bottom: 5px;
+}
+
+.courses__block-header_main h1 {
+    font-size: 18px;
+}
+
+.courses__block-header_years p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.courses__block-header_years p:last-child {
+    margin-bottom: 0;
+}
+
+.courses__block-body {
+}
+
+.courses__block-body hr {
+    border-top: 1px solid #EEEEEE;
+}
+
+.courses__block-body_line {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.courses__block-body_line p {
+    font-size: 16px;
+    margin: auto 0;
+}
+
+.courses__block-body_line p:nth-child(2n) {
+    max-width: 110px;
+}
+
+.courses__block-body_line i {
+    color: #b01116;
+}
+
+.courses__block-body_btn {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.courses__block-body_btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #b01116;
+    border: 2px solid #b01116;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.courses__block-body_btn button:hover {
+    color: #fff;
+    background-color: #b01116;
+}
+
+@media (max-width: 1214px) {
+    .courses__cards {
+        justify-content: center;
+    }
+}

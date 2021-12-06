@@ -1,0 +1,151 @@
+.intro_bg {
+    background: linear-gradient(180deg, 
+        rgba(0, 0, 0, 0.4) 0%, 
+        rgba(0, 0, 0, 0.8) 100%), 
+    url(../../images/tutoring/background.jpg);
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_text {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    height: 50%;
+}
+
+.intro_text h1 {
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+.intro_text button {
+	color: #fff;
+	font-size: 18px;
+	border: 2px solid #B01116;
+	padding: 10px 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.intro_text button:hover {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #b01116;
+}
+
+.tutoring_about {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tutoring_about>h1 {
+    font-size: 36px;
+    width: 650px;
+    margin-bottom: 30px;
+}
+
+.tutoring_about>p {
+    font-size: 28px;
+    width: 650px;
+    margin-bottom: 75px;
+}
+
+.tutoring_about_photo-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.tutoring_about_photo {
+    width: 360px;
+    height: 360px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    transition: .2s;
+    margin: 0 20px 40px 20px;
+}
+
+.tutoring_about_photo:hover {
+    width: 370px;
+    height: 370px;
+    margin: 0 10px 30px 10px;
+}
+
+.tutoring_about_photo:nth-child(1) {
+    background: url(../../images/tutoring/about/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.tutoring_about_photo:nth-child(2) {
+    background: url(../../images/tutoring/about/2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.tutoring_about_photo:nth-child(3) {
+    background: url(../../images/tutoring/about/3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.tutoring_about_photo:nth-child(4) {
+    background: url(../../images/tutoring/about/4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.tutoring_about_photo:nth-child(5) {
+    background: url(../../images/tutoring/about/5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.tutoring_about_photo:nth-child(6) {
+    background: url(../../images/tutoring/about/6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.blog__teachers-4 {
+    background: #f5f5f5;
+    padding: 100px 0;
+}
+
+#teach__h1-4 {
+    text-align: center;
+    margin: 0 auto 75px auto;
+    font-size: 36px;
+    width: 600px;
+}
+
+.teachers-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.blog__courses-2 {
+    padding: 100px 0;
+}
+
+.courses__inner-2 h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 35px;
+}

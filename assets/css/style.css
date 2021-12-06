@@ -1,0 +1,245 @@
+@font-face {
+    font-family: FuturaPT-Heavy;
+    src: url(../font/FuturaPT-Heavy.ttf);
+}
+@font-face {
+    font-family: FuturaPT-Medium;
+    src: url(../font/FuturaPT-Medium.ttf);
+}
+@font-face {
+    font-family: FuturaPT-Book;
+    src: url(../font/FuturaPT-Book.ttf);
+}
+@font-face {
+    font-family: FuturaPT-Bold;
+    src: url(../font/FuturaPT-Bold.ttf);
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: FuturaPT-Heavy;
+}
+
+p, ul, a{
+    font-family: FuturaPT-Book;
+}
+
+button {
+    font-family: FuturaPT-Bold;
+}
+
+strong {
+    font-family: FuturaPT-Heavy;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+    scroll-behavior: smooth;
+    border: none;
+    background: none;
+    list-style: none;
+}
+
+li,
+a,
+button {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2));
+}
+
+.header_navigation {
+    background: white;
+    width: 100%;
+}
+
+.header_up {
+    padding: 15px 2.5%;
+}
+
+.header_logo { 
+    height: 40px;
+    cursor: pointer;
+}
+
+.header_contact {
+    width: 500px;
+    height: 40px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_network {
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+    transition: .2s;
+    filter: grayscale(1);
+}
+
+.header_network:hover {
+    filter: grayscale(0);
+}
+
+#header_tel {
+    font-size: 24px;
+}
+
+.header_btn-nav {
+    font-size: 16px;
+    border: 2px solid #B01116;
+    color: #B01116;
+    height: 40px;
+    padding: 0 20px;
+    background: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.header_btn-nav:hover {
+    color: #fff;
+    background: #b01116;
+}
+
+.header_hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e2e2e2;
+    padding: 0;
+    margin: 0 2.5%;
+}
+
+.header_nav__links {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2.5%;
+    text-transform: uppercase;
+}
+
+.header_nav__links_active {
+    color: #B01116;
+}
+
+.header_nav__links li {
+    display: inline-block;
+}
+
+.header_nav__links li a {
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.header_nav__links li a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    width: 100%;
+    height: 384px;
+    background-color: #EEEEEE; 
+}
+
+footer h2 {
+    font-size: 24px;
+    font-family: FuturaPT-Medium;
+    color: #B01116;
+}
+
+footer p li a{
+    font-size: 16px;
+    font-family: FuturaPT-Book;
+}
+
+.footer {
+    width: 1200px;
+    height: 284px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.footer li {
+    margin-top: 10px;
+}
+
+#footer_logo {
+    width: 300px;
+    height: 57px;
+}
+
+.footer__info {
+    width: 358px;
+    height:284px; 
+}
+
+.footer__info p {
+    padding-top: 20px;
+}
+
+.footer__links {
+    width: 204px;
+    height: 284px;
+}
+
+.footer__links a:hover {
+    text-decoration: underline;
+}
+
+.footer__contacts {
+    width: 224px;
+    height: 253px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contacts img{
+    width: 21px;
+    height: 21px;
+    margin-top: 10px;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__contact a {
+    margin-top: 10px;
+}
+
+.footer__contact a:hover {
+    text-decoration: underline;
+}
+
+.footer__contact img {
+    margin-right: 10px;
+}
+
+.footer__text__contacts p {
+    margin-top: 10px;
+}
+
+.footer__other__text {
+    margin-left: 31px;
+}

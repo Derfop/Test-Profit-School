@@ -1,0 +1,310 @@
+.intro_bg {
+    background: linear-gradient(180deg, 
+        rgba(0, 0, 0, 0.4) 0%, 
+        rgba(0, 0, 0, 0.8) 100%), 
+    url(../../images/english_for_kids/background.jpg);
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_text {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    height: 50%;
+}
+
+.intro_text h1 {
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+.intro_text button {
+	color: #fff;
+	font-size: 18px;
+	border: 2px solid #B01116;
+	padding: 10px 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.intro_text button:hover {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #b01116;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.about>h1 {
+    font-size: 36px;
+    max-width: 550px;
+    text-align: center;
+}
+
+.about_cards {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 250px 250px;
+    gap: 75px 75px;
+}
+
+.about_card {
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 0px 25px rgb(0 0 0 / 10%);
+}
+
+.about_card>h1 {
+    font-size: 100px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    opacity: 0.1;
+}
+
+.about_card p {
+    font-size: 24px;
+}
+
+#for {
+    background: #f5f5f5;
+    padding: 100px 0;
+}
+
+.for {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.for>h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.for_cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.for_card {
+    margin-top: 75px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.for_card>img {
+    width: 100px;
+    height: 100px;
+}
+
+.for_card>h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.for_card>p {
+    font-size: 20px;
+}
+
+.programm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.programm>h1 {
+    font-size: 36px;
+}
+
+.programm_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.programm_block>h1 {
+    color: #b01116;
+    font-size: 32px;
+    margin: 50px 0 30px;
+}
+
+.programm_block>p {
+    font-size: 24px;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+.programm_block>i {
+    width: 32px;
+    height: 32px;
+}
+
+.programm_items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.programm_item-2>hr {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 2px solid #b01116;
+}
+
+.programm_item {
+    width: 575px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.programm_item>i {
+    color: #b01116;
+}
+
+.programm_item>h2 {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.programm>hr {
+    width: 1200px;
+    margin-top: 50px;
+    border-top: 2px solid #eee;
+}
+
+.programm_item-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.programm_item-2-img {
+    width: 560px;
+    box-shadow: 0px 0px 25px rgb(0 0 0 / 10%);
+}
+
+.img-1 {
+    background: url(../../images/english_for_kids/course/1.jpg);
+    background-size: cover;
+}
+
+.img-2 {
+    background: url(../../images/english_for_kids/course/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-3 {
+    background: url(../../images/english_for_kids/course/3.jpg);
+    background-size: cover;
+}
+
+.img-4 {
+    background: url(../../images/english_for_kids/course/4.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.programm_item-2-inner {
+    width: 560px;
+}
+
+.programm_item-2-inner>h1 {
+    text-align: center;
+    color: #b01116;
+}
+
+.programm_item-2-inner>h2 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.programm_item-2-inner>p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.programm_item-2-inner>ul li {
+    list-style: disc;
+    font-size: 20px;
+}
+
+.blog__teachers-3 {
+    margin-top: 100px;
+    padding: 100px 0;
+    background: #f5f5f5;
+}
+
+#teach__h1-3 {
+    text-align: center;
+    margin: 0 auto 75px auto;
+    font-size: 36px;
+    width: 600px;
+}
+
+.teachers-3 {
+    width: 1200px;
+    height: min-content;
+    margin: 75px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 75px;
+}
+
+.course-main-2 {
+    padding: 100px 0;
+}
+
+.course-main-2>.container>p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.course_inner {
+    display: flex;
+    justify-content: center;
+}
+
+.course_inner>h1 {
+    width: 675px;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
