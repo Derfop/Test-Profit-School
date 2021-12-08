@@ -40,3 +40,15 @@ $(function() {
 	});
 
 })
+
+let popup1 = document.getElementById('mypopup-1'),
+  popupToggle1 = document.getElementById('myBtn-1'),
+  popupClose1 = document.getElementById('close-1');
+
+popupToggle1.onclick = function() {
+  popup1.style.display = "block";
+};
+
+popupClose1.onclick = function() {
+  popup1.style.display = "none";
+};

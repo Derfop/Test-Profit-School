@@ -20,7 +20,7 @@
                     <img class="header_network" src="../images/header/vk.png" alt="vk">
                     <img class="header_network" src="../images/header/inst.png" alt="inst">
                     <p id="header_tel">+7 (927) 043-39-88</p>
-                    <a href="#"><button class="header_btn-nav">Связаться с нами</button></a>
+                    <button class="header_btn-nav" id="myBtn-1">Связаться с нами</button>
                 </div>
            </div>
            <hr class="header_hr">
@@ -37,6 +37,30 @@
        </div>   
     </header>
     <main>
+        <div id="mypopup-1" class="popup">
+            <div class="popup-callback-block">
+                <div class="popup-header">
+                    <h1>Заказать звонок</h1>
+                    <p>Пожалуйста заполните форму для связи. Благодарим за обращение.</p>
+                </div>
+                <span id="close-1" class="close callback">&times;</span>
+                
+                <div class="popup-callback">
+                    <div class="callback">
+                        <div class="callback_block">
+                            <form class="form-callback" action="assets/php/save_call.php" method="POST">
+                                <input type="email" id="email" name="email" placeholder="Ваша почта" required pattern="\S+@[a-z]+.[a-z]+">
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                                <input type="text" id="tel" name="tel" placeholder="Ваш телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                                <div class="btn_block">
+                                    <input class="callback_btn" type="submit" value="Добавить">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="blog__courses">
             <div class="container">
                 <div class="courses__inner">   
@@ -1084,5 +1108,6 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
