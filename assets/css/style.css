@@ -336,15 +336,6 @@ footer p li a{
     width: 100%;
 }
 
-/*.callback_btn {
-    width: 50%;
-    padding: 12px 0;
-    font-size: 20px;
-    background: none;
-    cursor: pointer;
-    color: white;
-    transition: all 250ms;
-}*/
 
 .callback_btn {
     font-size: 16px;
@@ -362,3 +353,13 @@ footer p li a{
     color: #fff;
     background: #b01116;
 }
+
+/*.callback_btn {
+    width: 50%;
+    padding: 12px 0;
+    font-size: 20px;
+    background: none;
+    cursor: pointer;
+    color: white;
+    transition: all 250ms;
+}*/
