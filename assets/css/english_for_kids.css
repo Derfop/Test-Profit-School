@@ -60,15 +60,17 @@
 }
 
 .about_cards {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows: 250px 250px;
-    gap: 75px 75px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .about_card {
+    margin-top: 50px;
     position: relative;
+    width: 320px;
+    height: 210px;
     padding: 20px;
     box-shadow: 0px 0px 25px rgb(0 0 0 / 10%);
 }
@@ -275,17 +277,16 @@
     text-align: center;
     margin: 0 auto 75px auto;
     font-size: 36px;
-    width: 600px;
+    max-width: 600px;
 }
 
 .teachers-3 {
-    width: 1200px;
+    max-width: 1200px;
     height: min-content;
-    margin: 75px auto 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 75px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .course-main-2 {
@@ -307,4 +308,43 @@
     font-size: 36px;
     margin-bottom: 30px;
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .about_cards, .for_cards, .programm_items, .teachers-3 {
+        justify-content: space-evenly;
+    }
+
+    .programm_item-2 {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro_text h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 375px) {
+    .intro_text h1 {
+        font-size: 36px;
+    }
+
+    .about>h1, .for>h1, .programm>h1, #teach__h1-3, .course_inner>h1 {
+        font-size: 24px;
+    }
+
+    .for_card>h2,.programm_block>h1, .programm_item-2-inner>h1, .course-main-2>.container>p {
+        font-size: 20px;
+    }
+
+    .for_card>p, .programm_block>p, .programm_item-2-inner>p, 
+    .programm_item-2-inner>h2, .programm_item-2-inner>ul li {
+        font-size: 18px;
+    }
+
+    .programm_item>h2 {
+        font-size: 16px;
+    }
 }

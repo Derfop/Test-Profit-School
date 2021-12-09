@@ -26,15 +26,19 @@
            </div>
            <hr class="header_hr">
            <nav>
-               <ul class="header_nav__links">
+               <ul class="header_nav__links" id="nav">
                    <li><a href="pages/courses.html">КУРСЫ</a></li>
                    <li><a href="pages/preparation_for_school.html">ПОДГОТОВКА К ШКОЛЕ</a></li>
                    <li><a href="pages/tutoring.html">РЕПЕТИТОРСТВО</a></li>
                    <li><a href="pages/oge_ege.html">ПОДГОТОВКА К ОГЭ И ЕГЭ</a></li>
                    <li><a href="pages/english_for_kids.html">АНГЛИЙСКИЙ ДЛЯ ДЕТЕЙ</a></li>
                    <li><a href="pages/teachers.html">ПРЕПОДАВАТЕЛИ</a></li>
+                   <button class="header_btn-nav-2" id="myBtn-2">Связаться с нами</button>
                </ul>
            </nav>
+           <div class="nav-toggle" id="nav-toggle">
+                <span class="nav-toggle_item">Menu</span>
+            </div>
        </div>   
     </header>
 
@@ -50,7 +54,7 @@
                 <div class="popup-callback">
                     <div class="callback">
                         <div class="callback_block">
-                            <form class="form-callback" action="assets/php/save_call.php" method="POST">
+                            <form class="form-callback" action="assets/php/send.php" method="POST">
                                 <input type="email" id="email" name="email" placeholder="Ваша почта" required pattern="\S+@[a-z]+.[a-z]+">
                                 <input type="text" id="name" name="name" placeholder="Ваше имя" required>
                                 <input type="text" id="tel" name="tel" placeholder="Ваш телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
@@ -63,6 +67,32 @@
                 </div>
             </div>
         </div>
+
+        <div id="mypopup-2" class="popup">
+            <div class="popup-callback-block">
+                <div class="popup-header">
+                    <h1>Заказать звонок</h1>
+                    <p>Пожалуйста заполните форму для связи. Благодарим за обращение.</p>
+                </div>
+                <span id="close-2" class="close callback">&times;</span>
+                
+                <div class="popup-callback">
+                    <div class="callback">
+                        <div class="callback_block">
+                            <form class="form-callback" action="assets/php/send.php" method="POST">
+                                <input type="email" id="email" name="email" placeholder="Ваша почта" required pattern="\S+@[a-z]+.[a-z]+">
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                                <input type="text" id="tel" name="tel" placeholder="Ваш телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                                <div class="btn_block">
+                                    <input class="callback_btn" type="submit" value="Добавить">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section>
             <div class="intro_bg">
                 <div class="intro_text">
@@ -192,7 +222,7 @@
                                 <hr class="course_hr">
                                 <div class="course_text">
                                     <p>С нуля до продвинутого уровня говорения, письма и чтения.</p><br>
-                                    <p>Развитие у дошкольников 5-7 лет общеязыковых, познавательных способностей, умения использовать изученный лексико-грамматический материал в естественных ситуациях общения.</p>
+                                    <p>Развитие у дошкольников 5-7 лет общеязыковых, познавательных способностей и т.д.</p>
                                 </div>
                                 <div class="course_link">
                                     <a href="pages/english_for_kids.html">Узнать подробнее</a>
@@ -210,8 +240,7 @@
         </section>
         <section class="blog__teachers">
             <h1 id="teach__h1">Наши преподаватели</h1>
-            <p id="teach__p">Мы собрали лучших учителей, репетиторов, психологов и узких специалистов-практиков в одном
-                центре</p>
+            <p id="teach__p">Мы собрали лучших учителей, репетиторов, психологов и узких специалистов-практиков в одном центре</p>
             <div class="teachers">
                 <div class="teacher">
                     <div class="teach__name">

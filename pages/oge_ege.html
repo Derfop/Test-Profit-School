@@ -28,15 +28,19 @@
            </div>
            <hr class="header_hr">
            <nav>
-               <ul class="header_nav__links">
+               <ul class="header_nav__links" id="nav">
                    <li><a href="courses.html">КУРСЫ</a></li>
                    <li><a href="preparation_for_school.html">ПОДГОТОВКА К ШКОЛЕ</a></li>
                    <li><a href="tutoring.html">РЕПЕТИТОРСТВО</a></li>
                    <li><a href="oge_ege.html" class="header_nav__links_active">ПОДГОТОВКА К ОГЭ И ЕГЭ</a></li>
                    <li><a href="english_for_kids.html">АНГЛИЙСКИЙ ДЛЯ ДЕТЕЙ</a></li>
                    <li><a href="teachers.html">ПРЕПОДАВАТЕЛИ</a></li>
+                   <button class="header_btn-nav-2" id="myBtn-2">Связаться с нами</button>
                </ul>
            </nav>
+           <div class="nav-toggle" id="nav-toggle">
+                <span class="nav-toggle_item">Menu</span>
+            </div>
        </div>   
     </header>
 
@@ -52,7 +56,31 @@
                 <div class="popup-callback">
                     <div class="callback">
                         <div class="callback_block">
-                            <form class="form-callback" action="assets/php/save_call.php" method="POST">
+                            <form class="form-callback" action="../assets/php/send.php" method="POST">
+                                <input type="email" id="email" name="email" placeholder="Ваша почта" required pattern="\S+@[a-z]+.[a-z]+">
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                                <input type="text" id="tel" name="tel" placeholder="Ваш телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                                <div class="btn_block">
+                                    <input class="callback_btn" type="submit" value="Добавить">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mypopup-2" class="popup">
+            <div class="popup-callback-block">
+                <div class="popup-header">
+                    <h1>Заказать звонок</h1>
+                    <p>Пожалуйста заполните форму для связи. Благодарим за обращение.</p>
+                </div>
+                <span id="close-2" class="close callback">&times;</span>
+                
+                <div class="popup-callback">
+                    <div class="callback">
+                        <div class="callback_block">
+                            <form class="form-callback" action="../assets/php/send.php" method="POST">
                                 <input type="email" id="email" name="email" placeholder="Ваша почта" required pattern="\S+@[a-z]+.[a-z]+">
                                 <input type="text" id="name" name="name" placeholder="Ваше имя" required>
                                 <input type="text" id="tel" name="tel" placeholder="Ваш телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
@@ -750,6 +778,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
 </body>
 </html>

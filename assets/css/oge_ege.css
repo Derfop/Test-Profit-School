@@ -100,7 +100,7 @@
 .gift_inner>h2 {
     font-family: FuturaPT-Book;
     font-size: 24px;
-    width: 550px;
+    max-width: 550px;
     text-align: center;
     margin-bottom: 200px;
 }
@@ -113,14 +113,14 @@
 
 .gift_inner>h1 {
     font-size: 36px;
-    width: 650px;
+    max-width: 650px;
     text-align: center;
     margin: 30px 0;
 }
 
 .gift_inner>p {
     font-size: 20px;
-    width: 550px;
+    max-width: 550px;
     text-align: center;
 }
 
@@ -136,4 +136,32 @@
 .blog__courses-5 {
     padding: 25px 0 100px 0;
     background: #f5f5f5;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+    .gift_phone {
+        background-position: bottom;
+    }
+}
+
+@media (max-width: 375px) {
+    .intro_text h1 {
+        font-size: 36px;
+    }
+
+    .why_block>h1 {
+        font-size: 24px;
+    }
+
+    .gift_inner>h2 {
+        font-size: 20px;
+    }
+
+    .why_block>ul li {
+        font-size: 18px;
+    }
 }

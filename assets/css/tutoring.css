@@ -56,13 +56,13 @@
 
 .tutoring_about>h1 {
     font-size: 36px;
-    width: 650px;
+    max-width: 650px;
     margin-bottom: 30px;
 }
 
 .tutoring_about>p {
     font-size: 28px;
-    width: 650px;
+    max-width: 650px;
     margin-bottom: 75px;
 }
 
@@ -132,7 +132,7 @@
     text-align: center;
     margin: 0 auto 75px auto;
     font-size: 36px;
-    width: 600px;
+    max-width: 600px;
 }
 
 .teachers-4 {
@@ -148,4 +148,26 @@
     font-size: 36px;
     text-align: center;
     margin-bottom: 35px;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 375px) {
+    .intro_text h1 {
+        font-size: 36px;
+    }
+
+    .tutoring_about>h1, #teach__h1-4, .courses__inner-2 h1 {
+        font-size: 24px;
+    }
+
+    .tutoring_about>p {
+        font-size: 18px;
+    }
 }

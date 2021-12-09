@@ -15,7 +15,7 @@
 }
 
 .courses__inner p {
-    width: 650px;
+    max-width: 650px;
     font-size: 28px;
     text-align: center;
     margin: 0 auto 50px auto;
@@ -132,5 +132,15 @@
 @media (max-width: 1214px) {
     .courses__cards {
         justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .courses__inner h1 {
+        font-size: 24px;
+    }
+
+    .courses__inner p {
+        font-size: 18px;
     }
 }

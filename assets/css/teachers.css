@@ -1,9 +1,14 @@
 .teachers-3 {
-    width: 1200px;
+    max-width: 1200px;
     height: min-content;
-    margin: 75px auto 100px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 75px 75px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+    .teachers-3 {
+        justify-content: space-evenly;
+    }
 }

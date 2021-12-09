@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    width: 60%;
+    width: 850px;
     height: 50%;
 }
 
@@ -56,11 +56,11 @@
 }
 
 .dignity {
-    width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 75px 75px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .dignity img {
@@ -76,6 +76,7 @@
 
 .element__dignity {
     width: 350px;
+    margin-bottom: 50px;
 }
 
 .course {
@@ -212,17 +213,17 @@
 }
 
 .teachers {
-    width: 1200px;
+    max-width: 1200px;
     height: min-content;
     margin: 0 auto 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 75px 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .teacher {
     width: 350px;
+    margin-bottom: 50px;
 }
 
 .teacher img {
@@ -277,4 +278,73 @@
 .btn__teachers:hover {
     color: #fff;
     background: #b01116;
+}
+
+@media (max-width: 1200px) {
+    .dignity {
+        justify-content: space-evenly;
+    }
+
+    .teachers {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1024px) {
+    .course_main {
+        width: 60%;
+    }
+
+    .course_img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro_bg {
+        height: 100vh;
+    }
+
+    .intro_text h1 {
+        font-size: 48px;
+    }
+
+    .intro_text p {
+        width: 75%;
+    }
+
+    .about__us h1 {
+        width: 75%;
+    }
+
+    .course_main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .course_img {
+        width: 0;
+    }
+
+    #teach__p {
+        width: 75%;
+    }
+}
+
+@media (max-width: 375px) {
+    .intro_text h1 {
+        font-size: 36px;
+    }
+
+    .intro_text p, .info, .course_text, #teach__p {
+        font-size: 18px;
+    }
+
+    .about__us h1, .course_title h1, #teach__h1 {
+        font-size: 24px;
+    }
+
+    .course_title h1 {
+        line-height: normal;
+    }
 }

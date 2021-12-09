@@ -55,21 +55,24 @@
 }
 
 .complex_title h1 {
-	width: 550px;
+	max-width: 550px;
 	font-size: 36px;
 	text-align: center;
 }
 
 .complex_cards {
-	margin-top: 100px;
-	display: grid; 
-  	grid-template-columns: 350px 350px 350px; 
-  	grid-template-rows: 181px 181px; 
-  	gap: 75px 75px;
+	margin-top: 50px;
+	max-width: 1200px;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .complex_card {
-
+	margin-top: 50px;
+	width: 350px;
+	height: 181px;
 }
 
 .complex_card_title {
@@ -94,7 +97,7 @@
 }
 
 .photo_title {
-	width: 500px;
+	max-width: 500px;
 	margin: 0 auto;
 	margin-bottom: 75px;
 	text-align: center;
@@ -236,17 +239,16 @@
     text-align: center;
     margin: 0 auto 75px auto;
     font-size: 36px;
-    width: 600px;
+    max-width: 600px;
 }
 
 .teachers-2 {
-    width: 1200px;
+    max-width: 1200px;
     height: min-content;
-    margin: 75px auto 100px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 75px 75px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .course {
@@ -261,15 +263,39 @@
 }
 
 .course_inner h1 {
-	width: 675px;
+	max-width: 675px;
 	font-size: 36px;
 	margin-bottom: 30px;
 	text-align: center;
 }
 
 .course_inner p {
-	width: 650px;
+	max-width: 650px;
 	font-size: 28px;
 	margin-bottom: 75px;
 	text-align: center;
 }
+
+@media (max-width: 1200px) {
+	.teachers-2, .complex_cards {
+		justify-content: space-evenly;
+	}
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 375px) {
+	.intro_text h1 {
+		font-size: 36px;
+	}
+
+	.complex_title h1, .photo_title h1, #teach__h1-2, .course_inner h1 {
+		font-size: 24px;
+	}
+
+	.course_inner p {
+		font-size: 18px;
+	}
+}	
