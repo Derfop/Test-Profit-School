@@ -88,3 +88,50 @@ for(var i = 0; i < closeModalEntry.length; i++){
     showModalEntry[0].classList.remove("show-entry");
   });
 };
+
+
+
+const course_btn = document.querySelector('.change__btn'),
+      blocks = document.querySelectorAll('.courses__cards'),
+      course_btn_items = document.querySelectorAll('.change_button');
+
+function filter() {
+  course_btn.addEventListener('click', event => {
+    const targetID = event.target.dataset.id
+    const target = event.target
+
+    if (target.classList.contains('change_button')) {
+      course_btn_items.forEach(change_button => change_button.classList.remove('active'))
+      target.classList.add('active')
+    }
+
+    switch(targetID) {
+      case 'all':
+        getItems('courses__cards')
+        break
+      case 'kids':
+        getItems(targetID)
+        break
+      case 'schoolboy':
+        getItems(targetID)
+        break
+      case 'teenager':
+        getItems(targetID)
+        break
+      case 'adult':
+        getItems(targetID)
+        break
+    }
+  })
+}
+
+filter()
+
+function getItems(ClassName) {
+  blocks.forEach(item => {
+    if (item.classList.contains(ClassName))
+      item.style.display = 'flex'
+    else
+      item.style.display = 'none'
+  })
+}

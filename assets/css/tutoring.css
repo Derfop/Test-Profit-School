@@ -158,7 +158,7 @@
     
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .intro_text h1 {
         font-size: 36px;
     }

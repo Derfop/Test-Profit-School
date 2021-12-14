@@ -188,6 +188,7 @@ footer p li a{
 
 .footer {
     max-width: 1200px;
+    padding: 20px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -573,7 +574,11 @@ footer p li a{
     }
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 400px) {
+    .form-course input[type=text], .form-course input[type=email], .form-course select {
+        width: 95%;
+    }
+
     .footer {
         justify-content: left;
     }
