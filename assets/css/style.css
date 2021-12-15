@@ -188,7 +188,7 @@ footer p li a{
 
 .footer {
     max-width: 1200px;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
     display: flex;
     justify-content: space-between;
