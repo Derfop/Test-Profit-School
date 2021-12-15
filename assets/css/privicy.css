@@ -1,0 +1,23 @@
+.privicy {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.privicy>h1 {
+	text-align: center;
+	font-size: 36px;
+	margin: 50px 0;
+}
+
+.privicy_block {
+	margin-bottom: 15px;
+}
+
+.privicy_block>h2 {
+	font-size: 24px;
+}
+
+.privicy_block>p {
+	font-size: 18px;
+}

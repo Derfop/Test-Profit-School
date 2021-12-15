@@ -31,7 +31,7 @@
     margin-bottom: 32px;
 }
 
-.intro_text button {
+.intro_text a {
 	color: #fff;
 	font-size: 18px;
 	border: 2px solid #B01116;
@@ -40,7 +40,7 @@
     cursor: pointer;
 }
 
-.intro_text button:hover {
+.intro_text a:hover {
     background: #fff;
     border: 2px solid #fff;
     color: #b01116;

@@ -93,6 +93,54 @@
             </div>
         </div>
 
+        <div class="modal-window_entry">
+            <div class="popup-course-block">
+                <div class="popup-header">
+                    <h1>Записаться на пробный урок</h1>
+                    <p>Пожалуйста заполните форму для связи. Благодарим за обращение.</p>
+                </div>
+                <span id="close-2" class="close-course">&times;</span>
+                
+                <div class="popup-course">
+                    <div>
+                        <div>
+                            <form class="form-course" action="assets/php/save_call.php" method="POST">
+                                <select>
+                                    <option selected disabled hidden>Выберите курс</option>
+                                    <option>Продленка Лайт</option>
+                                    <option>Продленка Базовый</option>
+                                    <option>Продленка Happy</option>
+                                    <option>Продленка Star</option>
+                                    <option>Скоро в школу Лайт</option>
+                                    <option>Скоро в школу Базовый</option>
+                                    <option>Скоро в школу Макси</option>
+                                    <option>Английский язык Мини-группа</option>
+                                    <option>Английский язык Сплит</option>
+                                    <option>Английский язык Индивидуальные занятия</option>
+                                    <option>Скретч Мини-группа</option>
+                                    <option>Бизнес школа Мини-группа</option>
+                                    <option>Дизайн Мини-группа</option>
+                                    <option>ОГЭ Лайт</option>
+                                    <option>ОГЭ Базовый</option>
+                                    <option>ОГЭ Супер</option>
+                                    <option>ЕГЭ Лайт</option>
+                                    <option>ЕГЭ Базовый</option>
+                                    <option>ЕГЭ Супер</option>
+                                    <option>ЕГЭ Супер+</option>
+                                </select>
+                                <input type="email" id="email" name="email" placeholder="Ваша почта" required pattern="\S+@[a-z]+.[a-z]+">
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                                <input type="text" id="tel" name="tel" placeholder="Ваш телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                                <div class="btn_block">
+                                    <input class="course_btn-2" type="submit" value="Добавить">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section>
             <div class="intro_bg">
                 <div class="intro_text">
@@ -154,7 +202,7 @@
                                     <a href="pages/courses.html">Посмотреть все курсы</a>
                                 </div>    
                             </div>
-                            <button class="course_btn">
+                            <button class="course_btn" id="crs_btn">
                                 Записаться на пробный урок
                             </button>
                         </div>
@@ -179,7 +227,7 @@
                                     <a href="pages/courses.html">Посмотреть все курсы</a>
                                 </div>    
                             </div>
-                            <button class="course_btn">
+                            <button class="course_btn" id="crs_btn">
                                 Записаться на пробный урок
                             </button>
                         </div>
@@ -208,7 +256,7 @@
                                 Записаться на пробный урок
                             </button>
                         </div>
-                        <div class="course_img course-3"></div>
+                        <div class="course_img course-3" id="crs_btn"></div>
                     </div>
                 </div>
 
@@ -229,7 +277,7 @@
                                     <a href="pages/courses.html">Посмотреть все курсы</a>
                                 </div>    
                             </div>
-                            <button class="course_btn">
+                            <button class="course_btn" id="crs_btn">
                                 Записаться на пробный урок
                             </button>
                         </div>
@@ -378,7 +426,7 @@
                     <li><a href="pages/oge_ege.html">Подготовка к ОГЭ и ЕГЭ</a></li>
                     <li><a href="pages/english_for_kids.html">Английский для детей</a></li>
                     <li><a href="pages/teachers.html">Преподаватели</a></li>
-                    <li><a href="">Политика конфиденциальности</a></li>
+                    <li><a href="pages/privicy.html">Политика конфиденциальности</a></li>
                     <li><a href="">Лицензия</a></li>
                 </ul>
             </div>
